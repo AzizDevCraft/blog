@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .container {
@@ -57,4 +58,40 @@ nav .image-box {
 nav .image-box img {
     height: 100%;
     width: 100%;
+}
+
+/* main content partie gauche  */
+
+.content {
+    width: 100%;
+}
+
+.left-part {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.left-part .article {
+    display: flex;
+    margin: 30px;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.left-part .article .txt h6{
+    color: grey;
+    margin: 5px;
+}
+
+.left-part .article .txt h2 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin: 5px;
+}
+
+.left-part .article .txt p {
+    line-height: 25px;
+    width: 400px;
+    overflow: hidden;
 }
