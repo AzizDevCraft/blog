@@ -109,6 +109,7 @@ nav .image-box img {
 .right-part .categorie ul {
     list-style: none;
     margin: 5px 15px;
+    counter-reset: compteurlist;
 }
 
 .right-part .categorie ul li a{
@@ -120,4 +121,20 @@ nav .image-box img {
 .separateur {
     border: solid 1px #000;
     margin: 30px 0;
+}
+
+.categorie ul li::before {
+    counter-increment: compteurlist;
+    content: counter(compteurlist) ". ";
+}
+
+.categorie ul li::after {
+    content : attr(data-count);
+    background: grey;
+    float: right;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
 }
